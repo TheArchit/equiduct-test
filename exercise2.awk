@@ -2,6 +2,7 @@
 #
 # Author: nishalr
 # Requires: Standard AWK
+# Usage: ./exercise2.awk 666 23 65 10000 1 76234 53 8172 97 00 01 1 9
 #
 # Description:
 #
@@ -36,6 +37,8 @@ function maxminavg(str,     fmt, count, i, arr, sum, min, max)
 
 BEGIN \
 {
-    str = "666 23 65 10000 1 76234 53 8172 97 00 01 1 9"
+    for (i = 1; i <= ARGC; i++)
+        str = (str " " ARGV[i])
+
     print maxminavg(str)
 }
