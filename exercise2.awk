@@ -28,7 +28,7 @@ function maxminavg(str,     fmt, count, i, arr, sum, min, max)
         if (arr[i] > max)
             max = arr[i]
 
-        if (arr[i] < min || min == "" )
+        if (arr[i] < min || min == "")
             min = arr[i]
     }
 
