@@ -3,9 +3,9 @@
 from sys import argv
 
 def maxminavg(nums):
-    count = len(nums)
+    
     sumall = sum(set(nums))
-    avg = round(float(sumall) / count, 2)
+    avg = round(float(sumall) / len(nums), 2)
 
     return avg, sumall, max(nums), min(nums)
 
